@@ -37,30 +37,3 @@ BCM94352HMB(Mini PCI) wifi/bt card
 65w external power supply
 OpenCore 0.9.2
 
-
-## Specs
-|:---|:---|
-| Computer Model | ThinkPad E480 (2018) |
-| CPU | Intel Core i7-8550U |
-| Memory | DDR4 2400 Mhz. Manually upgrade to 2x16 GB |
-| NVMe SSD | Manually change to Lenovo SL700 M.2 512 GB |
-| SATA SSD | Manually change to Toshiba TR200 SATA 512 GB |
-| Integrated Graphics | Intel UHD Graphics 620 |
-| Discrete Graphics | Radeon (TM) RX 550 (2 GB) |
-| Ethernet | RTL8168/8111/8112 Gigabit Ethernet Controller |
-| Sound Card | Conexant CX20753/4 (layout-id: 15) |
-| Wireless Card | Manually change to BCM94352Z (DM1560) |
-
-
-
-Security -> Secure Boot -> Disable
-Advanced -> CPU Setup -> VTd -> Disabled
-Devices -> Video Setup -> Active Video -> IGD
-Devices -> Video Setup -> Pre-Allocated Memory Size -> 64MB Min or set to 1024 like I have 
-Devices -> Video Setup -> Total Graphics Memory -> Maximum
-USB port mapping
-I have enclosed the USBports.kext derived from hackintool. It should work on your PC of this model.
-
-If you can Support My work 
-
-[I'm an inline-style link] www.paypal.com/stsbarrow
